@@ -1,0 +1,109 @@
+express is a framewrok for node
+
+server creation=nodejs + express
+
+basic command
+
+1)creating package json-npm init
+2)creating node modules-npm i express (install express)
+3)install nodemon-npm i -g nodemon
+4)run -nodemon index.js
+
+
+basic steps
+
+1)creating a folder (bankserver)
+2)create package json file
+3)install express
+4)create index.js
+5)import express inside the index js file
+6)create an app using express
+7)create the port number-3000
+8)resolving http request
+       
+       get- to get data
+       post-to upload data
+       put-to update data partially
+       patch-to update data compeltey
+       delete-to delete data
+
+1xx-information
+2xx-successfull
+3xx-redirection,
+4xx-client error
+5xx-server error
+
+
+     
+      USER AUTHENTICATION USING EXPRESS
+
+         JWT (JSON WEB TOKEN)
+               Library -jsonwebtoken      to install library ---- npm i jsonwebtoken
+               method -sign()  =method in the library to generate token
+               method -verify() =method to verify jwt tokens
+ 
+
+MIDDLEWARES           
+
+   -middlewares have the capacity to control server requests
+
+   -its a function with 3 args
+      a)request
+      b)responce
+      c)next
+  
+   -there are 2 types of middlewares
+       a)application specific middlewares
+       b)router specific middlewares
+
+
+
+SOLVING RUN TIME ERRORS IN JAVASCRIPT
+.....................................
+
+try catch
+
+try{
+      error causing code
+}
+catch{
+      solution
+}
+
+
+
+     MONGO DB
+     ........
+
+mongodb server
+   -shell commands in mongodb
+
+       -to see the database......................show dbs
+       -to open databse..........................use database_name
+       -view collections inside databse..........show collections
+       -to views datas inside colletions.........db.collection_name.find()
+       -to view any single data..................db.collection_name.findOne({unique data to identify})
+       -to insert new data.......................db.collection_name.insertOne({data})
+       -to view any single data acccrd o condition...
+                                          .......db.collection_name.find({condition})      all data
+                                          .......db.collection_name.findOne({condition})   single data
+       -to delete single data....................db.collection_name.deleteOne({data})
+       -delete count=0 if nothing is deleted  (thast is if abc is deleted count is 1 we try to delete again count becomes zero)
+       -to update................................db.collection_name.updateOne({data to update},{new data})
+                                                eg:({uname:'anu'},{uname:'anu v'})
+                                                
+
+
+   
+   SERVER MONGO DB INTEGRATION
+   ...........................
+
+    -MONGOOSE-library used to integrate databse and server
+        to install.........npm i mongoose
+
+
+
+
+
+
+
